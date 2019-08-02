@@ -1,0 +1,104 @@
+mixin popular()
+  +b.SECTION.popular
+    +e.container
+      +e.head
+        +e.title Популярные товары
+        +e.A(href="#").link смотреть все
+
+    +e.slider
+      +b.slide
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price--new 1,290 ₽
+          +e.body
+            img(src="../assets/images/gloves.png" width="79px" height="97px")
+          +e.footer
+            +e.text Перчатки графитчика
+
+      +b.slide--new
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price 1,290 ₽
+          +e.body
+            img(src="../assets/images/markers.png")
+          +e.footer
+            +e.text--like Маркер Molotow ONE4ALL Acrylic Twin Basic Set 2
+
+      +b.slide
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price 1,290 ₽
+          +e.body
+            img(src="../assets/images/cans.png" width="93px" height="121px")
+          +e.footer
+            +e.text GOLD 400ml Artist Paint
+
+    +e.discount
+      +e.head
+        +e.title Товары со скидкой
+        +e.A(href="#").link смотреть все
+
+    +e.slider
+      +b.slide
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price--new 1,290 ₽
+          +e.body
+            img(src="../assets/images/gloves.png" width="79px" height="97px")
+          +e.footer
+            +e.text Перчатки графитчика
+
+      +b.slide--new
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price 1,290 ₽
+          +e.body
+            img(src="../assets/images/bottle.png")
+          +e.footer
+            +e.text Заправка OTR.970 HARD TO BUFF
+
+      +b.slide
+        +e.hover
+            +e.btn-wrap
+              button.btn-item В корзину
+              button.btn-item В любимое
+        +e.card
+          +e.head
+            +e.icon
+              img(src="../assets/images/itemicon.png" width="24px" height="24px")
+            +e.price 1,290 ₽
+          +e.body
+            img(src="../assets/images/cans.png" width="93px" height="121px")
+          +e.footer
+            +e.text GOLD 400ml Artist Paint
+

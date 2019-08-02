@@ -1,0 +1,35 @@
+mixin footer()
+  +b.footer
+    +e.logo
+      img(src="../assets/images/logomob.png")
+
+    +e.UL.list
+      +e.LI.list-item
+        +e.A(href="#").link Магазин
+      +e.LI.list-item
+        +e.A(href="#").link Как оформить заказ
+      +e.LI.list-item
+        +e.A(href="#").link Доставка и оплата
+      +e.LI.list-item
+        +e.A(href="#").link Обмен и возврат
+      +e.LI.list-item
+        +e.A(href="#").link адреса магазинов
+      +e.LI.list-item
+        +e.A(href="#").link Контакты
+      +e.LI.list-item
+        +e.A(href="#").link О нас
+      +e.LI.list-item
+        +e.A(href="#").link Карта сайта
+
+    +e.social
+      a(href="#").link-vk
+      a(href="#").link-instagram
+
+    +e.rights
+      +e.right-text 2019 All right reserved
+
+      +e.cards
+        +e.card
+          img(src="../assets/images/visa.png")
+        +e.card
+          img(src="../assets/images/mc.png")

@@ -1,0 +1,207 @@
+.header
+  display flex
+  justify-content space-between
+  align-items center
+  background-color #000
+  padding 0 0 0 15px
+  border-bottom 4px solid #ED9570
+
+  &__logo
+    width 36px
+    height 45px
+
+  &__controls
+    display flex
+    justify-content space-between
+    width 180px
+
+.mob-menu
+  display none
+  width 100%
+  padding-bottom 30px
+  height auto
+  background linear-gradient(180deg, #ED9570 0%, #ED9570 100%);
+  padding-top 40px
+  position absolute
+  z-index 3
+
+  &__list
+    list-style none
+    margin 0
+    padding 0
+
+  &__list-item
+    position relative
+    cursor pointer
+    padding-left 40px
+    line-height 4
+
+    &:hover
+      // background #F5B28E
+
+    &--new
+      &:before
+        content ''
+        position absolute
+        width 24px
+        height 24px
+        background url('../images/newicon_slide.png')
+        left 10px
+        top 8px
+      a:before
+        content ''
+
+    &--sale
+      &:before
+        content ''
+        position absolute
+        width 24px
+        height 24px
+        background url('../images/saleicon.png')
+        left 10px
+        top 8px
+      a:before
+        content ''
+
+    &--like
+      &:before
+        content ''
+        position absolute
+        width 24px
+        height 24px
+        background url('../images/likeicon.png')
+        left 10px
+        top 7px
+      a:before
+        content ''
+
+    &.color
+      &:before
+        content ''
+        position absolute
+        width 80px
+        height 100%
+        background #f5b28e
+        left -35px
+
+  &__link
+    font-family 'Montserrat Bold'
+    font-size 10px
+    letter-spacing 0.2em
+    text-transform uppercase
+    color #3F1D15
+    display block
+    position relative
+
+    &.last
+      font-size 11px
+      font-family 'Montserrat Regular'
+
+      &:before
+        content ''
+
+    &.active
+      background #F5B28E
+
+      &:before
+        content '-'
+        font-weight 700
+
+      & ~ ul
+        background #F5B28E
+
+    &.extra-active
+      background #FACBA9 !important
+
+      & ~ ul
+        background #FACBA9 !important
+
+    &:before
+      content '+'
+      font-weight 700
+      position absolute
+      left -15px
+      top 0
+      color #3F1D15
+      z-index 1
+
+    &:hover
+      text-decoration none
+      color #3F1D15
+
+      &:active
+        ul
+          display block
+
+  &__search
+    position relative
+    width 100px
+    margin-left auto
+    margin-bottom 30px
+
+    &:before
+      content ''
+      position absolute
+      width 17px
+      height 17px
+      background url('../images/zoom.png')
+      left -25px
+      top 5px
+
+  &__dop-list
+    display none
+    list-style none
+
+  &__dop-list-item a
+    text-transform capitalize
+
+  &__dop-list-item
+    position relative
+
+    &:hover
+      // background #FACaa9
+
+    &.color
+      &:after
+        content ''
+        position absolute
+        width 80px
+        height 100%
+        background #FACaa9
+        left -80px
+        top 0
+
+  &__dop-list--extra
+    background #FACBA9
+
+  &__social
+    width 80px
+    display flex
+    justify-content space-between
+    margin-left auto
+    margin-right 20px
+    margin-top 40px
+
+  &__adress
+    padding-right 23px
+    margin-top 19px
+    margin-left auto
+    width 247px
+
+  &__adress-text
+    color #000000
+    font-size 11px
+    line-height 13px
+    text-align right
+
+    & + &
+      margin-top 10px
+
+  &__adress-site
+    margin-top 10px
+    background #177FAB
+    color #fff
+    font-size 11px
+    line-height 13px
+    text-align right
+

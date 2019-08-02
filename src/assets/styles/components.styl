@@ -1,0 +1,263 @@
+.btn
+  display flex
+  width 60px
+  height 60px
+  justify-content center
+  border-radius 0
+  outline none !important
+  img
+    align-self center
+
+  &:hover
+    background #FFCFAC
+
+  &.active
+    background #ED9570
+
+  &.activef
+    background #FFCFAC
+
+  &--text
+    flex-direction row-reverse
+    background none
+    border none
+    white-space nowrap
+    font-size 9px
+    line-height 20px
+    width 120px
+    height 20px
+    cursor pointer
+
+    img
+      margin-right 10px
+
+    &:hover
+      opacity 0.6
+
+
+.btn-outline
+  background none
+  border 1px solid #ED9570
+  padding 5px 9px
+  outline none !important
+  cursor pointer
+
+  &.active
+    background #ED9570
+
+  &:hover
+    opacity 0.6
+
+.btn-item
+  width 125px
+  height 40px
+  background #fff
+  border 1px solid #000
+  font-size 9px
+  font-family 'Montserrat Bold'
+  text-transform uppercase
+  letter-spacing 1.5px
+
+.btn-close
+  width 16px
+  height 16px
+  background none
+  border 1px solid #dadada
+  position relative
+  cursor pointer
+  background url('../images/xicon.png') no-repeat center
+
+.link-vk
+  display block
+  width 25px
+  height 25px
+  background url('../images/vkicon.png') no-repeat center
+
+  &--white
+    width 32px
+    height 32px
+    background url('../images/vkicon2.png') no-repeat center
+
+.link-instagram
+  display block
+  width 25px
+  height 25px
+  background url('../images/instaicon.png') no-repeat center
+
+  &--white
+    width 32px
+    height 32px
+    background url('../images/instaicon2.png') no-repeat center
+
+input
+  border none
+  background none
+  width 100px
+  color #3F1D15
+  font-size 10px
+  line-height 13px
+  outline none
+  padding-right 15px
+
+input[type="search"]::-webkit-input-placeholder { color: #3F1D15; }
+input[type="search"]:-ms-input-placeholder { color: #3F1D15; }
+input[type="search"]::-ms-input-placeholder { color: #3F1D15; }
+input[type="search"]::placeholder { color: #3F1D15; }
+
+.slide
+  width 160px
+  height 220px !important
+  padding 9px 13px 12px 10px
+  background #FFFFFF
+  border 1px solid #E5E5E5
+  position relative
+  margin-right 5px
+
+
+  &--new
+    &:before
+      content ''
+      position absolute
+      width 24px
+      height 24px
+      background url('../images/newicon_slide.png')
+      right 13px
+      top 34px
+
+  &:hover
+    .slide__hover
+      opacity 1
+
+  &__hover
+    transition all 0.3s ease
+    opacity 0
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background rgba(0, 0, 0, 0.8)
+    z-index 2
+
+  &__btn-wrap
+    display flex
+    flex-direction column
+    padding 0 17px
+    margin-top 67px
+
+    button + button
+      margin-top 10px
+
+  &__head
+    display flex
+    justify-content space-between
+
+  &__card
+    height 100%
+    display flex
+    flex-direction column
+    justify-content space-between
+
+  &__price
+    font-family 'Oswald Regular'
+    font-size 16px
+    line-height 24px
+    font-weight 600
+    position relative
+
+    &--new
+      &:before
+        content '1,290 ₽'
+        font-family 'Oswald Regular'
+        position absolute
+        color #E2635A
+        font-size 10px
+        text-decoration line-through
+        left -35px
+        top 2px
+
+  &__icon
+    width 24px
+    height 24px
+
+  &__body
+    margin-top 11px
+    margin-bottom 8px
+    display flex
+    justify-content center
+
+
+  &__text
+    text-align center
+    font-size 10px
+    line-height 12px
+    position relative
+    margin-bottom 13px
+
+    &--like
+      &:before
+        content ''
+        width 9px
+        height 8px
+        position absolute
+        background url('../images/like.png')
+        left 11px
+
+.banner
+  width 325px
+  height 129px
+  background url('../images/banner.jpg') no-repeat center
+  background-size cover
+  position relative
+  padding 7px 8px
+
+  &__closed
+    display flex
+    justify-content flex-end
+    align-items center
+
+    button
+      align-self center
+  &__text
+    font-size 6px
+    margin-right 5px
+
+
+.pagination
+  &__wrapper
+    margin 0 auto
+    width 280px
+    height 40px
+    display flex
+
+    button + button
+      margin-left -1px
+
+.btn-pagination
+  width 40px
+  height 40px
+  border 1px solid #dadada
+  background none
+  outline none !important
+  cursor pointer
+  color #000000
+  background #fff
+  font-size 12px
+
+  &:hover
+    opacity .6
+
+  &.active
+    color #ffffff
+    background #000
+
+  &.prev
+    background-image url('../images/arrowicon.png')
+    background-repeat no-repeat
+    background-position center
+
+  &.next
+    background-image url('../images/arrowicon.png')
+    background-repeat no-repeat
+    background-position center
+    transform scale(-1, 1)

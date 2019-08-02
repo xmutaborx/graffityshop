@@ -1,0 +1,35 @@
+mixin main-content()
+  +b.SECTION.main-content
+    +e.container
+      +e.category
+
+        +e.item--color
+          +e.item-head
+            +e.P.item-text АЭРОЗОЛЬНАЯ КРАСКА
+
+        +e.item--marker
+          +e.item-head
+            +e.P.item-text ХУДОЖЕСТВЕННЫЕ ТОВАРЫ
+
+        +e.item--clothes
+          +e.item-head
+            +e.P.item-text ОДЕЖДЫ И АКСЕССУАРЫ
+
+        +e.item--books
+          +e.item-head
+            +e.P.item-text КНИГИ И ЖУРНАЛЫ
+
+    +e.container-stock
+
+      +b.stock
+        +e.item--red
+          +e.title РАСПРОДАЖА
+          +e.icon
+            img(src="../assets/images/percent.png" width="24px" height="24px")
+          +e.text Уцененные товары по наилучшим ценам. Спешите товар ограничен! #[br] Скидики до 70%
+
+        +e.item--blue
+          +e.title НОВИНКИ
+          +e.icon
+            img(src="../assets/images/newicon.png" width="24px" height="24px")
+          +e.text Горячие новинки от топовых брендов, по низким ценам

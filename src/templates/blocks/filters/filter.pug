@@ -1,0 +1,44 @@
+mixin filter()
+  +b.SECTION.filter
+    +e.controls
+      +b.A(href="#").btn
+          img(src="../assets/images/previcon.png")
+      +e.title Баллоны
+      +b.BUTTONS.btn#filters
+          img(src="../assets/images/filtericon.png")
+
+    +e.menu
+      +e.container
+        +e.reset
+          +b.BUTTON.btn--text Reset Filters
+            img(src="../assets/images/reseticon.png")
+
+        +e.filters
+          +e.categories
+            +e.name Sort by Brand:
+            +e.buttons
+              +b.BUTTON.btn-outline Montana
+              +b.BUTTON.btn-outline.active Molotow
+              +b.BUTTON.btn-outline.active MTN
+              +b.BUTTON.btn-outline Liquitex
+              +b.BUTTON.btn-outline Highlights
+              +b.BUTTON.btn-outline.active Ekastu Safety
+              +b.BUTTON.btn-outline Loop
+
+            +e.name Sort by Categories:
+            +e.buttons
+              +b.BUTTON.btn-outline Spray paint
+              +b.BUTTON.btn-outline Combo Packs
+              +b.BUTTON.btn-outline Caps nozzles
+              +b.BUTTON.btn-outline.active Calligraphy
+
+            +e.name Sort by:
+            +e.buttons
+              +b.BUTTON.btn-outline Name
+              +b.BUTTON.btn-outline Newest
+              +b.BUTTON.btn-outline Sale
+              +b.BUTTON.btn-outline Price incresing
+              +b.BUTTON.btn-outline Price decreasing
+
+
+

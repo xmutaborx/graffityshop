@@ -1,0 +1,90 @@
+mixin header()
+  .svg-sprite
+    include ../sprite/svg.svg
+  +b.header.navbar
+    +e.logo
+      a(href="/")
+        img(src="../assets/images/logomob.png")
+    +e.controls
+      +b.A(href="#").btn
+        img(src="../assets/images/user.png")
+      +b.A(href="#").btn
+        img(src="../assets/images/cart.png")
+      +b.BUTTONS.btn#burger
+        img(src="../assets/images/burger.png")
+
+  +b.mob-menu
+    +e.search
+      input(type="search" placeholder="Поиск по сайту")
+
+    +e.container
+      +e.UL.list
+
+        +e.LI.list-item
+          +e.A.link краска
+        +e.LI.list-item
+          +e.A.link--dop художественные товары
+
+          +e.UL.dop-list
+            +e.LI.dop-list-item
+              +e.A.link Маркеры One 4 All
+            +e.LI.dop-list-item
+              +e.A.link Заправки One 4 All
+            +e.LI.dop-list-item
+              +e.A.link--dop.extra Спиртовые маркеры
+
+              +e.UL.dop-list
+                +e.LI.dop-list-item
+                  +e.A.link.last Molotow Burner
+                +e.LI.dop-list-item
+                  +e.A.link.last One The Run
+                +e.LI.dop-list-item
+                  +e.A.link.last Touch
+                +e.LI.dop-list-item
+                  +e.A.link.last Finecolor
+
+
+            +e.LI.dop-list-item
+              +e.A.link Спиртовые чернила
+            +e.LI.dop-list-item
+              +e.A.link Скетчбуки
+            +e.LI.dop-list-item
+              +e.A.link Пустые маркеры
+            +e.LI.dop-list-item
+              +e.A.link Перья
+            +e.LI.dop-list-item
+              +e.A.link Стикеры
+
+        +e.LI.list-item
+          +e.A(href="#").link книги и журналы
+        +e.LI.list-item
+          +e.A(href="#").link одежда и аксессуары
+        +e.LI.list-item--new
+          +e.A(href="#").link новинки
+        +e.LI.list-item--sale
+          +e.A(href="#").link распродажа
+        +e.LI.list-item--like
+          +e.A(href="#").link любимое
+        +e.LI.list-item
+          +e.A.link--dop о компании
+
+          +e.UL.dop-list
+            +e.LI.dop-list-item
+              +e.A.link.last О нас
+            +e.LI.dop-list-item
+              +e.A.link.last Адреса магазинов
+            +e.LI.dop-list-item
+              +e.A.link.last Контакты
+            +e.LI.dop-list-item
+              +e.A.link.last Как заказать
+            +e.LI.dop-list-item
+              +e.A.link.last Доставка и оплата
+
+      +e.social
+        +b.A(href="#").link-vk--white
+        +b.A(href="#").link-instagram--white
+
+      +e.adress
+        +e.adress-text Cанкт-Петербург,#[br] наб. Обводного канала, д. 60 - 110, «Ткачи» +7(921)588-50-53
+        +e.adress-text Санкт-Петербург,#[br] Лиговский пр., д. 74Д «Этажи» +7(931)236-01-43
+        +e.adress-site shop@graffiti3d.ru

@@ -1,0 +1,28 @@
+
+include ../bemto/bemto.pug
+
+include ../blocks/header/header
+include ../blocks/main-slider/main-slider
+include ../blocks/main-content/main-content
+include ../blocks/popular/popular
+include ../blocks/footer/footer
+include ../blocks/scripts/scripts
+
+-
+  set_bemto_settings({
+    prefix: '',
+    element: '__',
+    modifier: '--'
+  })
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+  body
+    +header()
+    +main-slider()
+    +main-content()
+    +popular()
+    +footer()
+    block scripts
+    +scripts(['https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', 'build.js'])
