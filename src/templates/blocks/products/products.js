@@ -1,3 +1,3 @@
 $('#close-banner').click(function() {
-  $('.banner').hide()
+  $('.products__banner').hide()
 })

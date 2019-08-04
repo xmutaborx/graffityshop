@@ -14,8 +14,9 @@ mixin header()
         img(src="../assets/images/burger.png")
 
   +b.mob-menu
-    +e.search
-      input(type="search" placeholder="Поиск по сайту")
+    +e.search-container
+      +e.search
+        input#search(type="search" placeholder="Поиск по сайту")
 
     +e.container
       +e.UL.list

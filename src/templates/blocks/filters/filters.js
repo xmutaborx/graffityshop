@@ -6,3 +6,12 @@ $('#filters').click(function() {
     $('#filters').removeClass('activef')
   }
 });
+
+$('#prev').click(function() {
+  if (!$(this).hasClass('activef')) {
+    $(this).addClass('activef')
+  } else {
+    $(this).removeClass('activef')
+  }
+})
+
