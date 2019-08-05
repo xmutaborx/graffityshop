@@ -5,6 +5,7 @@
   justify-content center
   border-radius 0
   outline none !important
+  position relative
   img
     align-self center
 
@@ -16,6 +17,9 @@
 
   &.activef
     background #EFEFEF
+
+  &.click:active
+    background #efefef
 
   &--text
     flex-direction row-reverse
@@ -34,7 +38,19 @@
     &:hover
       opacity 0.6
 
-
+  .cart
+    font-family 'Acme'
+    position absolute
+    width 16px
+    height 16px
+    background #1FC4F4
+    color #000
+    font-size 9px
+    border-radius 50%
+    right 13px
+    top 15px
+    padding-left 6px
+    padding-top 2px
 
 .btn-outline
   background #fff
@@ -91,7 +107,7 @@
     height 32px
     background url('../images/instaicon2.png') no-repeat center
 
-input
+input#search
   border none
   background none
   width 100%
@@ -99,7 +115,6 @@ input
   font-size 10px
   line-height 13px
   outline none
-  padding-right 15px
 
 input[type="search"]::-webkit-input-placeholder { color: #000; }
 input[type="search"]:-ms-input-placeholder { color: #000; }

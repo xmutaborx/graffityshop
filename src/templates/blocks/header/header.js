@@ -41,7 +41,7 @@ $('.mob-menu__link--dop').click(function() {
 });
 
 $('#search').focusin(function() {
-  $('.mob-menu__search').css({'width': '90%', 'border-color': '#000'})
+  $('.mob-menu__search').css({'width': '100%', 'border-color': '#000'})
 })
 
 $('#search').focusout(function() {
