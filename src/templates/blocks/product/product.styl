@@ -12,9 +12,31 @@
     transform translateX(-50%)
     white-space nowrap
 
+  &__zoom
+    width 30px
+    height 30px
+    border none
+    background none
+    background url('../images/zoom_in.png') no-repeat center
+    position absolute
+    outline none
+    right 26px
+    cursor pointer
+    z-index 50
+
+    &.active
+      background url('../images/zoom_out.png') no-repeat center
+
+
   &__slider
     width 280px
+    height 280px
     margin 0 auto
+
+  &__slide
+
+    img
+      width 100%
 
   &__price
     font-family 'Montserrat Regular'
@@ -27,7 +49,7 @@
     padding-left 5px
     position relative
     margin-left auto
-    margin-right 36px
+    margin-right 33px
     margin-bottom 20px
 
     &:after
