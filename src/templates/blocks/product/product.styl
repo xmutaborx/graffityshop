@@ -1,0 +1,178 @@
+.product
+
+  &__panel
+    display flex
+    align-items center
+
+  &__title
+    color #434343
+    font-size 16px
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    white-space nowrap
+
+  &__slider
+    width 280px
+    margin 0 auto
+
+  &__price
+    font-family 'Montserrat Regular'
+    font-size 24px
+    color #000
+    font-weight 600
+    background #FDFFA5
+    display block
+    width 90px
+    padding-left 5px
+    position relative
+    margin-left auto
+    margin-right 36px
+    margin-bottom 20px
+
+    &:after
+      content ''
+      width 12px
+      height 20px
+      background url('../images/rubles.png')
+      position absolute
+      right 14px
+      top 9px
+
+  &__options
+    padding 25px
+
+  &__options-title
+    font-size 18px
+    font-family 'Montserrat Bold'
+    margin-bottom 10px
+
+  &__row
+    display flex
+    justify-content space-between
+    align-items center
+    margin-left 60px
+
+  &__colors-wrap
+    border-bottom 1px solid #DADADA
+    padding-bottom 15px
+
+  &__color-text
+    font-size 11px
+    line-height 11px
+    position relative
+
+    &:before
+      content ''
+      width 20px
+      height 20px
+      border-radius 50%
+      position absolute
+      left -29px
+      top -6px
+
+    &--brown
+      &:before
+        background #916C5F
+
+    &--siris
+      &:before
+        background #897653
+
+    &--lightblue
+      &:before
+        background #8CC7EC
+
+    &--brick
+      &:before
+        background #993423
+
+    &--energy-blue
+      &:before
+        background #03B2BF
+
+  &__calc
+    display flex
+    align-items center
+
+    button
+      background none
+      border none
+      outline none
+      color #C4C4C4
+      font-size 20px
+
+  &__calc-text
+    margin-left 5px
+    margin-right 5px
+    font-size 11px
+    line-height 11px
+    color #000
+
+  &__total
+    text-align right
+    padding-top 15px
+    padding-right 15px
+
+  &__total-text
+    font-size 10px
+
+    span
+      font-size 18px
+      font-family 'Montserrat Bold'
+      position relative
+      margin-left 7px
+
+      &:after
+        content ''
+        width 9px
+        height 11px
+        background url('../images/rubles2.png')
+        background-size cover
+        position absolute
+        right -10px
+        bottom 4px
+
+  &__btn-wrapper
+    display flex
+    justify-content space-between
+    padding 40px 25px 50px
+
+
+  &__accord
+    padding 0 25px
+    margin-bottom 30px
+
+  &__accord-title
+    cursor pointer
+    letter-spacing 1.5px
+    font-size 11px
+    font-weight 600
+    font-family 'Montserrat Regular'
+    color #000
+    padding-bottom 10px
+    padding-top 10px
+    border-top 1px solid #DADADA
+    padding-left 29px
+    position relative
+
+    & + &
+      margin-top -1px
+
+    &:before
+      content '-'
+      position absolute
+      left 0px
+
+    &.active
+      color #1FC4F4
+
+      &:before
+        content '+'
+
+  &__accord-text
+    display none
+    padding-top 15px
+    padding-bottom 15px
+
+

@@ -11,6 +11,16 @@
       nextArrow: false
     });
 
+    $('.product__slider').slick({
+      centerMode: true,
+      variableWidth: true,
+      infinite: true,
+      dots: true,
+      arrows: true,
+    });
+
+    $('.product__slide').zoom();
+
   });
 
 })(jQuery);

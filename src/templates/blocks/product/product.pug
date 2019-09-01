@@ -1,0 +1,86 @@
+mixin product()
+  +b.product
+    +e.panel
+      +b.A(href="#").btn.active
+        img(src="../assets/images/previcon.png")
+      +e.title GOLD 400ml Artist Paint
+
+    +e.slider-wrapper
+      +e.price 1,290
+      +e.slider
+        +e.slide
+          img(src="../assets/images/product_image.png")
+        +e.slide
+          img(src="../assets/images/product_image.png")
+        +e.slide
+          img(src="../assets/images/product_image.png")
+        +e.slide
+          img(src="../assets/images/product_image.png")
+        +e.slide
+          img(src="../assets/images/product_image.png")
+
+    +e.options
+      +e.options-title Доступные цвета #[span (5)]
+      +e.colors-wrap
+        +e.row
+          +e.color-text--brown BLK 8210 коричнево-розовая
+          +e.calc
+            +e.BUTTON -
+            +e.calc-text 0
+            +e.BUTTON +
+
+        +e.row
+          +e.color-text--siris BLK 8130 сирийская
+          +e.calc
+            +e.BUTTON -
+            +e.calc-text 1
+            +e.BUTTON +
+
+        +e.row
+          +e.color-text--lightblue BLK 5020 нежно-голубой
+          +e.calc
+            +e.BUTTON -
+            +e.calc-text 3
+            +e.BUTTON +
+
+        +e.row
+          +e.color-text--brick BLK 8240 кирпичная темная
+          +e.calc
+            +e.BUTTON -
+            +e.calc-text 1
+            +e.BUTTON +
+
+        +e.row
+          +e.color-text--energy-blue BLK P5000 энергетик синий
+          +e.calc
+            +e.BUTTON -
+            +e.calc-text 0
+            +e.BUTTON +
+
+      +e.total
+        +e.total-text Товаров: 4 на сумму #[span 5, 570]
+
+    +e.btn-wrapper
+      +b.BUTTON.btn.favorite
+      +b.BUTTON.btn.addToCart ДОБАВИТЬ В КОРЗИНУ
+
+
+    +e.accord#accordeon
+      +e.accord-title ОПИСАНИЕ И ХАРАКТЕРИСТИКИ
+      +e.accord-text
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        | Debitis magni optio illo esse voluptas dolorum perspiciatis a laborum,
+        | aliquid incidunt?
+
+      +e.accord-title ДОСТАВКА И ОПЛАТА
+      +e.accord-text
+        | Бесплатно, при заказе свыше 5000р (только наземным транспортом)
+        | В случае авиа перевозки уточняйте стоимость у менеджера При заказе
+        | до 5000р по тарифам почтовых или транспортных служб. При заказе до
+        | 5000р по тарифам почтовых или транспортных
+
+      +e.accord-title ОБМЕН И ВОЗВРАТ
+      +e.accord-text
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        | Debitis magni optio illo esse voluptas dolorum perspiciatis a laborum,
+        | aliquid incidunt?

@@ -1,0 +1,24 @@
+
+include ../bemto/bemto.pug
+
+include ../blocks/header/header
+
+include ../blocks/register/register
+
+include ../blocks/scripts/scripts
+
+-
+  set_bemto_settings({
+    prefix: '',
+    element: '__',
+    modifier: '--'
+  })
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+  body
+    +header()
+    +register()
+    block scripts
+    +scripts(['https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', 'build.js'])

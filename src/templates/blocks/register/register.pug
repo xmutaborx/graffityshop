@@ -1,0 +1,38 @@
+mixin register()
+  +b.register#register
+    +e.head Личный Кабинет
+    +e.register
+      +b.A(href="/profile.html").btn.click
+        img(src="../assets/images/previcon.png")
+      +e.register-text Регистрация
+    +e.tips
+      | Заполните небольшую форму, и получите бонусы зарегистрированного
+      | пользовотеля нашего сайта.
+
+    +e.accord-wrap
+      +b.reg-accord#reg-accord
+        +e.title Личные Данные
+        +e.body
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="Имя")
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="Фамилия")
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="Телефон")
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="Email")
+
+          +e.btn-wrap-body
+            +b.BUTTON.btn.next Продолжить
+
+        +e.title Платежные данные
+        +e.body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ea?
+
+        +e.title Адресная книга
+        +e.body
+          p Lorem, ipsum dolor sit amet consectetur adipisicing.
+
+        +e.title Завершение регистрации
+        +e.body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia?

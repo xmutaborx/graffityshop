@@ -1,0 +1,67 @@
+mixin profile()
+  +b.profile#profile
+    +e.head Личный Кабинет
+
+
+    //- СЕКЦИЯ ЕСЛИ ЮЗЕР НЕ ЗАРЕГЕСТРИРОВАНН
+    //- +e.img
+    //-   img(src="../assets/images/lk.png" width="220px" height="163px")
+
+    //- +e.container
+    //-   +e.title Добро пожаловать в личный кабинет!
+    //-   +e.text
+    //-     | Совершайте быстрые покупки Добавляйте товары в
+    //-     | избранное Смотрите историю заказов Добавляйте несколько
+    //-     | адресов Учавствуйте в акциях Получайте новости
+
+    //- +e.btn-wrap
+    //-   +b.A.btn.register(href="/register.html") ЗАРЕГЕСТРИРОВАТЬСЯ
+
+
+
+    //- СЕКЦИЯФ ЕСЛИ ЮЗЕР ЗАРЕГЕСТРИРОВАН
+    +e.title-reg Добрый день, Иван!
+    +e.tip С 15 по 25 августа на все маркеры будет действовать скидка 15%
+
+    +e.accord-wrap
+      +b.reg-accord#reg-accord
+        +e.title История заказов
+        +e.body
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="ТЕСТ")
+          +e.input-wrap
+            input.input-reg(type="text" placeholder="ТЕСТ")
+          +e.input-wrap
+
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ПРОСМОТРЕТЬ
+
+        +e.title Любимые Товары
+        +e.body
+          p Вы добавили в закладки 25 товаров
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ПРОСМОТРЕТЬ
+
+        +e.title Адресная книга
+        +e.body
+          p Lorem, ipsum dolor sit amet consectetur adipisicing.
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ПРОСМОТРЕТЬ
+
+        +e.title Платежный профиль
+        +e.body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia?
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ПРОСМОТРЕТЬ
+
+        +e.title Изменить контактные данные
+        +e.body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia?
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ПРОСМОТРЕТЬ
+
+        +e.title  Рассылка
+        +e.body
+          p Вы подписаный на рассылку
+          +e.btn-wrap-body
+            +b.BUTTON.btn.look ОТПИСАТЬСЯ
