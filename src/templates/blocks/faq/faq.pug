@@ -1,0 +1,50 @@
+mixin faq()
+  +b.SECTION.faq
+    +e.panel
+      +b.A(href="#").btn.active
+        img(src="../assets/images/previcon.png")
+      +e.panel-info
+        +e.panel-title FAQ
+        +e.panel-subtitle Часто задаваемые вопросы
+
+    +e.body
+      +e.navigation
+        +e.UL.list
+          +e.LI.list-item
+            +e.A.link(href="#") 1. О Компании
+          +e.LI.list-item
+            +e.A.link(href="#") 2. Контакты и адреса магазинов
+          +e.LI.list-item
+            +e.A.link(href="#") 3. Как сделать заказ на сайте
+          +e.LI.list-item
+            +e.A.link(href="#") 4. Доставка и оплата
+
+      +e.block
+        +e.info
+          +e.info-title О НАС
+
+        +e.content
+          +e.text
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua.
+
+          +e.text
+            | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            | ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            | voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            | occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            | anim id est laborum.
+
+      +e.block
+        +e.info--order
+          +e.info-title КАК СДЕЛАТЬ ЗАКАЗ?
+
+        +e.content
+          +e.text
+            | Для того чтобы сделать заказ на нашем сайте, Вам нужно выбрать товар
+            | из каталога доступной продукции, указать необходимое количество и
+            | нажать на кнопку «Добавить в корзину. Далее необходимо оформить заказ,
+            | нажав на кнопку „Заказать“. Затем следует зарегистрироваться, либо
+            | авторизоваться, в случае если Вы уже зарегистрированы на нашем сайте.
+            | При оформлении заказа Вам необходимо указать адрес доставки, контактные
+            | данные, а также выбрать способ доставки и оплаты.
