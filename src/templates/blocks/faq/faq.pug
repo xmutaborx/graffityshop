@@ -11,15 +11,17 @@ mixin faq()
       +e.navigation
         +e.UL.list
           +e.LI.list-item
-            +e.A.link(href="#") 1. О Компании
+            //- тут в ссылке пишем переход на якорь
+            +e.A.link(href="#about") 1. О Компании
           +e.LI.list-item
-            +e.A.link(href="#") 2. Контакты и адреса магазинов
+            +e.A.link(href="#contact") 2. Контакты и адреса магазинов
           +e.LI.list-item
             +e.A.link(href="#") 3. Как сделать заказ на сайте
           +e.LI.list-item
             +e.A.link(href="#") 4. Доставка и оплата
 
-      +e.block
+      //- блоку даём айдишник с нужным якорем
+      +e.block#about
         +e.info
           +e.info-title О НАС
 
@@ -35,7 +37,7 @@ mixin faq()
             | occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             | anim id est laborum.
 
-      +e.block
+      +e.block#contact
         +e.info--order
           +e.info-title КАК СДЕЛАТЬ ЗАКАЗ?
 
